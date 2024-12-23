@@ -1,0 +1,10 @@
+LanguageTool 作为服务器运行
+
+LanguageTool 可以作为 HTTP 服务器运行，提供 REST API 接口。python缺省使用这种方式连接 LanguageTool 服务器。
+
+1. 下载  LanguageTool zip 文件，解压缩到本地文件夹
+2. 进入本地文件夹，运行命令：java -cp languagetool.jar org.languagetool.server.HTTPServer --port 8081
+
+Python 脚本可以通过 HTTP 请求与 LanguageTool 服务器通信。有两种方式：
+1. language_tool = language_tool_python.LanguageTool('en-US')  （缺省方式）
+2. language_tool = language_tool_python.LanguageTool('en-us', remote_server='http://localhost:8081/v2/')   
