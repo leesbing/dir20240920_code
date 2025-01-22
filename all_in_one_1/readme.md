@@ -7,7 +7,6 @@
 ### 文件《2_data_preprocessing_BERT.ipynb》
 - 输入文件《1_merged table v1.xlsx》
 - 矫正乱字符，
-- 新建列“processed_text”，里面大写字符改小写
 - 另外新增了几列，用于统计
 - 输出结果 《2_processed_data_BERT.csv》
 
